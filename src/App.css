@@ -140,12 +140,14 @@ h1 {
 
 .task-details {
   flex: 1;
+  text-align: left;
 }
 
 .task-text {
   font-size: 16px;
   margin: 0 0 10px 0;
   color: #333;
+  text-align: left;
 }
 
 .task-meta {
@@ -161,6 +163,7 @@ h1 {
   padding: 3px 8px;
   border-radius: 12px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .task-actions {
@@ -256,10 +259,10 @@ h1 {
 @media (max-width: 600px) {
   .task-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .task-actions {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .tabs {
     flex-direction: column;
