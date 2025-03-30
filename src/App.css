@@ -57,6 +57,7 @@ h1 {
 .add-task-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -77,6 +78,7 @@ h1 {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+  text-align: center;
 }
 
 .add-button:hover {
@@ -159,6 +161,7 @@ h1 {
   padding: 3px 8px;
   border-radius: 12px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .task-actions {
@@ -247,24 +250,6 @@ h1 {
   color: #555;
 }
 
-.edit-diff {
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.previous-text {
-  color: #e53935;
-  text-decoration: line-through;
-  margin: 5px 0;
-}
-
-.new-text {
-  color: #43a047;
-  margin: 5px 0;
-}
-
 .history-list .task-item {
   margin-bottom: 15px;
 }
@@ -272,13 +257,20 @@ h1 {
 @media (max-width: 600px) {
   .task-content {
     flex-direction: column;
+    align-items: center;
   }
-
   .task-actions {
     justify-content: center;
   }
-
   .tabs {
     flex-direction: column;
+  }
+  .add-task-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-button {
+    width: 100%;
+    border-radius: 4px;
   }
 }
